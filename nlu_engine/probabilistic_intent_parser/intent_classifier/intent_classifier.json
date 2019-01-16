@@ -1,0 +1,111 @@
+{
+  "coeffs": [
+    [
+      -0.7406559005863346, 
+      -0.4315491408229268, 
+      -0.25431552976103056, 
+      -2.314578010571011, 
+      -0.32317603606045936, 
+      -3.0832609925679884, 
+      -0.5995673959476415, 
+      -0.8010024019876927, 
+      -3.5672792881661506, 
+      -0.18718505499154162, 
+      -0.4132297828888095, 
+      -0.2268523972563163, 
+      -1.3691106157111206, 
+      4.05462552379688, 
+      -0.31193288696897004
+    ]
+  ], 
+  "config": {
+    "data_augmentation_config": {
+      "add_builtin_entities_examples": false, 
+      "min_utterances": 20, 
+      "noise_factor": 5, 
+      "unknown_word_prob": 0.2, 
+      "unknown_words_replacement_string": "unknownword"
+    }, 
+    "featurizer_config": {
+      "pvalue_threshold": 0.4, 
+      "sublinear_tf": false, 
+      "use_stemming": false, 
+      "word_clusters_name": null
+    }, 
+    "random_seed": null, 
+    "unit_name": "log_reg_intent_classifier"
+  }, 
+  "featurizer": {
+    "best_features": [
+      0, 
+      1, 
+      2, 
+      3, 
+      4, 
+      5, 
+      6, 
+      7, 
+      8, 
+      9, 
+      10, 
+      11, 
+      13, 
+      14, 
+      15
+    ], 
+    "config": {
+      "pvalue_threshold": 0.4, 
+      "sublinear_tf": false, 
+      "use_stemming": false, 
+      "word_clusters_name": null
+    }, 
+    "language_code": "en", 
+    "tfidf_vectorizer": {
+      "idf_diag": [
+        4.186352633162641, 
+        4.697178256928631, 
+        5.102643365036796, 
+        3.087740344494531, 
+        5.102643365036796, 
+        3.310883895808741, 
+        4.4094961844768505, 
+        4.697178256928631, 
+        3.3978952727983707, 
+        3.849880396541428, 
+        4.697178256928631, 
+        5.102643365036796, 
+        2.537694007575259, 
+        3.310883895808741, 
+        1.1418301954392176, 
+        5.102643365036796
+      ], 
+      "vocab": {
+        "admin": 0, 
+        "dash": 1, 
+        "employees": 2, 
+        "entityfeaturepagename": 3, 
+        "front": 4, 
+        "go": 5, 
+        "home": 6, 
+        "landing": 7, 
+        "load": 8, 
+        "page": 9, 
+        "panel": 10, 
+        "screen": 11, 
+        "the": 12, 
+        "to": 13, 
+        "unknownword": 14, 
+        "users": 15
+      }
+    }, 
+    "unknown_words_replacement_string": "unknownword"
+  }, 
+  "intent_list": [
+    "reasonable:Navigate", 
+    null
+  ], 
+  "intercept": [
+    -0.04153981086827212
+  ], 
+  "t_": 601.0
+}

@@ -1,0 +1,29 @@
+{
+  "config": {
+    "max_pattern_length": 1000, 
+    "max_queries": 100, 
+    "unit_name": "deterministic_intent_parser"
+  }, 
+  "group_names_to_slot_names": {
+    "group_0": "page", 
+    "group_1": "page", 
+    "group_2": "page", 
+    "group_3": "page", 
+    "group_4": "page"
+  }, 
+  "language_code": "en", 
+  "patterns": {
+    "reasonable:Navigate": [
+      "^\\s*go\\s*to\\s*the\\s*(?P<group_4>%PAGENAME%)\\s*$", 
+      "^\\s*load\\s*(?P<group_0>%PAGENAME%)\\s*$", 
+      "^\\s*load\\s*the\\s*(?P<group_1>%PAGENAME%)\\s*$", 
+      "^\\s*go\\s*(?P<group_2>%PAGENAME%)\\s*$", 
+      "^\\s*go\\s*to\\s*(?P<group_3>%PAGENAME%)\\s*$"
+    ]
+  }, 
+  "slot_names_to_entities": {
+    "reasonable:Navigate": {
+      "page": "Page Name"
+    }
+  }
+}
