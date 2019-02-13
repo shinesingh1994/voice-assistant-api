@@ -206,9 +206,9 @@ Now that our API is in place. We can use our new API requests to serve to our we
 
 * **Connlaoi Smith** - *Ongoing Development* - [connlaoi](https://github.com/connlaoi)
 
-See also the list of [contributors](https://github.com/connlaoi/voice-assistant-api/graphs/contributors) who participated in this project.
-
 ## Acknowledgments
 
 * **Steve Bakos** - *Initial work on snips, artyom, & python api* - [steve-bakos](https://github.com/steve-bakos)
 * **Neil Gaspar** - *Initial work on snips, artyom, & python api* - [neil-gaspar](https://github.com/neil-gaspar)
+
+See also the list of [contributors](https://github.com/connlaoi/voice-assistant-api/graphs/contributors) who participated in this project.
