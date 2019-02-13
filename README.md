@@ -210,4 +210,5 @@ See also the list of [contributors](https://github.com/connlaoi/voice-assistant-
 
 ## Acknowledgments
 
-* **Steve Bakos** - *Initial work on snips & python api* - [steve-bakos](https://github.com/steve-bakos)
+* **Steve Bakos** - *Initial work on snips, artyom, & python api* - [steve-bakos](https://github.com/steve-bakos)
+* **Neil Gaspar** - *Initial work on snips, artyom, & python api* - [neil-gaspar](https://github.com/neil-gaspar)
