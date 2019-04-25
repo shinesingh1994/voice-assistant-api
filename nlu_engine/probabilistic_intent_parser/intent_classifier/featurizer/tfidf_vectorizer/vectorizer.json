@@ -1,0 +1,43 @@
+{
+  "builtin_entity_scope": [],
+  "config": {
+    "unit_name": "tfidf_vectorizer",
+    "use_stemming": false,
+    "word_clusters_name": null
+  },
+  "language_code": "en",
+  "vectorizer": {
+    "idf_diag": [
+      2.3652409519220585,
+      2.2351878236738605,
+      2.904237452654745,
+      2.904237452654745,
+      2.904237452654745,
+      2.514772685893022,
+      2.2110902720948,
+      2.0775588794702773,
+      2.8577174370198524,
+      2.8577174370198524,
+      2.904237452654745,
+      2.514772685893022,
+      2.904237452654745,
+      2.4522523289116878
+    ],
+    "vocab": {
+      "a": 0,
+      "am": 1,
+      "buy": 2,
+      "entityfeaturesnipsdefaultbuy": 3,
+      "entityfeaturesnipsdefaultrent": 4,
+      "for": 5,
+      "house": 6,
+      "i": 7,
+      "looking": 8,
+      "of": 9,
+      "rent": 10,
+      "the": 11,
+      "thinking": 12,
+      "to": 13
+    }
+  }
+}

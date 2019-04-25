@@ -1,8 +1,12 @@
 {
   "parsers_metadata": [
     {
-      "entity_identifier": "Page Name",
+      "entity_identifier": "snips/default--Buy",
       "entity_parser": "parser_1"
+    },
+    {
+      "entity_identifier": "snips/default--Rent",
+      "entity_parser": "parser_2"
     }
   ]
 }

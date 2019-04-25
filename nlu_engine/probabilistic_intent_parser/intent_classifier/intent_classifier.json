@@ -1,111 +1,93 @@
 {
   "coeffs": [
     [
-      -0.7406559005863346, 
-      -0.4315491408229268, 
-      -0.25431552976103056, 
-      -2.314578010571011, 
-      -0.32317603606045936, 
-      -3.0832609925679884, 
-      -0.5995673959476415, 
-      -0.8010024019876927, 
-      -3.5672792881661506, 
-      -0.18718505499154162, 
-      -0.4132297828888095, 
-      -0.2268523972563163, 
-      -1.3691106157111206, 
-      4.05462552379688, 
-      -0.31193288696897004
+      -0.24925904353494202,
+      0.6154207689045992,
+      1.7199955157369153,
+      1.7199955157369153,
+      -0.9203633652465016,
+      -0.4495174177497721,
+      0.5417514059253526,
+      -0.2562305817980423,
+      0.344288268053247,
+      -1.2708255087069056,
+      -0.9203633652465016,
+      -1.5127409878171127,
+      0.33065129625095246,
+      -0.2616576600593039
+    ],
+    [
+      -0.22340183764725893,
+      0.6471702031223858,
+      -0.8994465881809314,
+      -0.8994465881809314,
+      1.7403316011732262,
+      -0.4309100557361841,
+      0.5734824199339821,
+      -0.21605366681268717,
+      0.37504578814088635,
+      -1.258914057431197,
+      1.7403316011732262,
+      -1.4930336111024483,
+      0.3314368408047984,
+      -0.20295708529307224
+    ],
+    [
+      -0.3186720963254865,
+      -0.9492708484623246,
+      -0.6155218051014417,
+      -0.6155218051014417,
+      -0.6178904037599356,
+      0.050052827356617126,
+      -0.8915795879056784,
+      -0.291771703003812,
+      -0.5522993841603404,
+      0.9220061381889892,
+      -0.6178904037599356,
+      1.1540366952672976,
+      -0.5940070657214099,
+      -0.39882122228405775
     ]
-  ], 
+  ],
   "config": {
     "data_augmentation_config": {
-      "add_builtin_entities_examples": false, 
-      "min_utterances": 20, 
-      "noise_factor": 5, 
-      "unknown_word_prob": 0.2, 
-      "unknown_words_replacement_string": "unknownword"
-    }, 
+      "add_builtin_entities_examples": false,
+      "max_unknown_words": 0,
+      "min_utterances": 20,
+      "noise_factor": 5,
+      "unknown_word_prob": 0,
+      "unknown_words_replacement_string": null
+    },
     "featurizer_config": {
-      "pvalue_threshold": 0.4, 
-      "sublinear_tf": false, 
-      "use_stemming": false, 
-      "word_clusters_name": null
-    }, 
-    "random_seed": null, 
+      "added_cooccurrence_feature_ratio": 0,
+      "cooccurrence_vectorizer_config": {
+        "filter_stop_words": true,
+        "keep_order": true,
+        "unit_name": "cooccurrence_vectorizer",
+        "unknown_words_replacement_string": null,
+        "window_size": 5
+      },
+      "pvalue_threshold": 0.4,
+      "tfidf_vectorizer_config": {
+        "unit_name": "tfidf_vectorizer",
+        "use_stemming": false,
+        "word_clusters_name": null
+      },
+      "unit_name": "featurizer"
+    },
+    "random_seed": null,
     "unit_name": "log_reg_intent_classifier"
-  }, 
-  "featurizer": {
-    "best_features": [
-      0, 
-      1, 
-      2, 
-      3, 
-      4, 
-      5, 
-      6, 
-      7, 
-      8, 
-      9, 
-      10, 
-      11, 
-      13, 
-      14, 
-      15
-    ], 
-    "config": {
-      "pvalue_threshold": 0.4, 
-      "sublinear_tf": false, 
-      "use_stemming": false, 
-      "word_clusters_name": null
-    }, 
-    "language_code": "en", 
-    "tfidf_vectorizer": {
-      "idf_diag": [
-        4.186352633162641, 
-        4.697178256928631, 
-        5.102643365036796, 
-        3.087740344494531, 
-        5.102643365036796, 
-        3.310883895808741, 
-        4.4094961844768505, 
-        4.697178256928631, 
-        3.3978952727983707, 
-        3.849880396541428, 
-        4.697178256928631, 
-        5.102643365036796, 
-        2.537694007575259, 
-        3.310883895808741, 
-        1.1418301954392176, 
-        5.102643365036796
-      ], 
-      "vocab": {
-        "admin": 0, 
-        "dash": 1, 
-        "employees": 2, 
-        "entityfeaturepagename": 3, 
-        "front": 4, 
-        "go": 5, 
-        "home": 6, 
-        "landing": 7, 
-        "load": 8, 
-        "page": 9, 
-        "panel": 10, 
-        "screen": 11, 
-        "the": 12, 
-        "to": 13, 
-        "unknownword": 14, 
-        "users": 15
-      }
-    }, 
-    "unknown_words_replacement_string": "unknownword"
-  }, 
+  },
+  "featurizer": "featurizer",
   "intent_list": [
-    "reasonable:Navigate", 
+    "snips-T9S648M5bU:Buy",
+    "snips-T9S648M5bU:Rent",
     null
-  ], 
+  ],
   "intercept": [
-    -0.04153981086827212
-  ], 
-  "t_": 601.0
+    -0.3461960715988695,
+    -0.3753336970789081,
+    0.1427522275270002
+  ],
+  "t_": 701.0
 }

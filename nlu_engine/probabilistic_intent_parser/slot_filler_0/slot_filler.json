@@ -1,133 +1,162 @@
 {
   "config": {
     "crf_args": {
-      "algorithm": "lbfgs", 
-      "c1": 0.1, 
+      "algorithm": "lbfgs",
+      "c1": 0.1,
       "c2": 0.1
-    }, 
+    },
     "data_augmentation_config": {
-      "add_builtin_entities_examples": false, 
-      "capitalization_ratio": 0, 
+      "add_builtin_entities_examples": true,
+      "capitalization_ratio": 0.2,
       "min_utterances": 200
-    }, 
+    },
     "feature_factory_configs": [
       {
         "args": {
-          "common_words_gazetteer_name": "top_10000_words_stemmed", 
-          "language_code": "en", 
-          "n": 1, 
+          "common_words_gazetteer_name": "top_10000_words_stemmed",
+          "language_code": "en",
+          "n": 1,
           "use_stemming": true
-        }, 
-        "factory_name": "ngram", 
+        },
+        "factory_name": "ngram",
         "offsets": [
-          -2, 
-          -1, 
-          0, 
-          1, 
+          -2,
+          -1,
+          0,
+          1,
           2
         ]
-      }, 
+      },
       {
         "args": {
-          "common_words_gazetteer_name": "top_10000_words_stemmed", 
-          "language_code": "en", 
-          "n": 2, 
+          "common_words_gazetteer_name": "top_10000_words_stemmed",
+          "language_code": "en",
+          "n": 2,
           "use_stemming": true
-        }, 
-        "factory_name": "ngram", 
+        },
+        "factory_name": "ngram",
         "offsets": [
-          -2, 
+          -2,
           1
         ]
-      }, 
+      },
       {
-        "args": {}, 
-        "factory_name": "is_digit", 
+        "args": {},
+        "factory_name": "is_digit",
         "offsets": [
-          -1, 
-          0, 
+          -1,
+          0,
           1
         ]
-      }, 
+      },
       {
-        "args": {}, 
-        "factory_name": "is_first", 
+        "args": {},
+        "factory_name": "is_first",
         "offsets": [
-          -2, 
-          -1, 
+          -2,
+          -1,
           0
         ]
-      }, 
+      },
       {
-        "args": {}, 
-        "factory_name": "is_last", 
+        "args": {},
+        "factory_name": "is_last",
         "offsets": [
-          0, 
-          1, 
+          0,
+          1,
           2
         ]
-      }, 
+      },
+      {
+        "args": {
+          "language_code": "en",
+          "n": 1
+        },
+        "factory_name": "shape_ngram",
+        "offsets": [
+          0
+        ]
+      },
+      {
+        "args": {
+          "language_code": "en",
+          "n": 2
+        },
+        "factory_name": "shape_ngram",
+        "offsets": [
+          -1,
+          0
+        ]
+      },
+      {
+        "args": {
+          "language_code": "en",
+          "n": 3
+        },
+        "factory_name": "shape_ngram",
+        "offsets": [
+          -1
+        ]
+      },
       {
         "args": {
           "entities": [
-            "Page Name"
-          ], 
-          "language_code": "en", 
-          "tagging_scheme_code": 2, 
+            "snips/default--Buy"
+          ],
+          "tagging_scheme_code": 2,
           "use_stemming": true
-        }, 
-        "drop_out": 0.1, 
-        "factory_name": "entity_match", 
+        },
+        "drop_out": 0.5,
+        "factory_name": "entity_match",
         "offsets": [
-          -2, 
-          -1, 
+          -2,
+          -1,
           0
         ]
-      }, 
+      },
       {
         "args": {
           "entity_labels": [
-            "snips/amountOfMoney", 
-            "snips/ordinal", 
-            "snips/number", 
-            "snips/duration", 
-            "snips/percentage", 
-            "snips/temperature", 
-            "snips/datetime"
-          ], 
-          "language_code": "en", 
+            "snips/amountOfMoney",
+            "snips/datetime",
+            "snips/duration",
+            "snips/number",
+            "snips/ordinal",
+            "snips/percentage",
+            "snips/temperature"
+          ],
+          "language_code": "en",
           "tagging_scheme_code": 1
-        }, 
-        "factory_name": "builtin_entity_match", 
+        },
+        "factory_name": "builtin_entity_match",
         "offsets": [
-          -2, 
-          -1, 
+          -2,
+          -1,
           0
         ]
-      }, 
+      },
       {
         "args": {
-          "cluster_name": "brown_clusters", 
-          "language_code": "en", 
+          "cluster_name": "brown_clusters",
           "use_stemming": false
-        }, 
-        "factory_name": "word_cluster", 
+        },
+        "factory_name": "word_cluster",
         "offsets": [
-          -2, 
-          -1, 
-          0, 
+          -2,
+          -1,
+          0,
           1
         ]
       }
-    ], 
-    "random_seed": null, 
-    "tagging_scheme": 1, 
+    ],
+    "random_seed": null,
+    "tagging_scheme": 1,
     "unit_name": "crf_slot_filler"
-  }, 
-  "crf_model_file": "modelgj_LKl.crfsuite", 
-  "intent": "reasonable:Navigate", 
-  "language_code": "en", 
+  },
+  "crf_model_file": "modelzc3stK.crfsuite",
+  "intent": "snips-T9S648M5bU:Buy",
+  "language_code": "en",
   "slot_name_mapping": {
-    "page": "Page Name"
+    "Buy": "snips/default--Buy"
   }
 }

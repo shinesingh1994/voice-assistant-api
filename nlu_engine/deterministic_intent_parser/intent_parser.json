@@ -1,29 +1,31 @@
 {
   "config": {
-    "max_pattern_length": 1000, 
-    "max_queries": 100, 
+    "ignore_stop_words": true,
+    "max_pattern_length": 1000,
+    "max_queries": 500,
     "unit_name": "deterministic_intent_parser"
-  }, 
+  },
   "group_names_to_slot_names": {
-    "group_0": "page", 
-    "group_1": "page", 
-    "group_2": "page", 
-    "group_3": "page", 
-    "group_4": "page"
-  }, 
-  "language_code": "en", 
+    "group0": "Buy",
+    "group1": "Rent"
+  },
+  "language_code": "en",
   "patterns": {
-    "reasonable:Navigate": [
-      "^\\s*go\\s*to\\s*the\\s*(?P<group_4>%PAGENAME%)\\s*$", 
-      "^\\s*load\\s*(?P<group_0>%PAGENAME%)\\s*$", 
-      "^\\s*load\\s*the\\s*(?P<group_1>%PAGENAME%)\\s*$", 
-      "^\\s*go\\s*(?P<group_2>%PAGENAME%)\\s*$", 
-      "^\\s*go\\s*to\\s*(?P<group_3>%PAGENAME%)\\s*$"
+    "snips-T9S648M5bU:Buy": [
+      "^\\s*i\\s*am\\s*thinking\\s*(?P<group0>%SNIPSDEFAULTBUY%)\\s*$",
+      "^\\s*i\\s*am\\s*looking\\s*for\\s*(?P<group0>%SNIPSDEFAULTBUY%)\\s*$"
+    ],
+    "snips-T9S648M5bU:Rent": [
+      "^\\s*i\\s*am\\s*thinking\\s*(?P<group1>%SNIPSDEFAULTRENT%)\\s*$",
+      "^\\s*i\\s*am\\s*looking\\s*for\\s*(?P<group1>%SNIPSDEFAULTRENT%)\\s*$"
     ]
-  }, 
+  },
   "slot_names_to_entities": {
-    "reasonable:Navigate": {
-      "page": "Page Name"
+    "snips-T9S648M5bU:Buy": {
+      "Buy": "snips/default--Buy"
+    },
+    "snips-T9S648M5bU:Rent": {
+      "Rent": "snips/default--Rent"
     }
   }
 }
